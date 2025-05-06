@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Visualizer</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <!-- (Optional but recommended for CSV) Include PapaParse from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+
+    <h1>Data Dashboard</h1>
+
+    <div class="controls" id="controls">
+        <label for="categoryFilter">Filter by Category: </label>
+        <select id="categoryFilter">
+            <option value="all">Show All</option>
+            {/* Options will be added dynamically by JavaScript */}
+        </select>
+        <button id="resetFilterBtn" style="margin-left: 10px;">Reset Filter</button>
+    </div>
+
+    <div class="chart-container" id="chart-container">
+        <!-- Canvas for Chart.js -->
+        <canvas id="myBarChart"></canvas>
+    </div>
+
+    <!-- Link to your JavaScript file (IMPORTANT: Load AFTER Chart.js and body elements) -->
+    <script src="script.js"></script>
+</body>
+</html>

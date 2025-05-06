@@ -1,0 +1,37 @@
+[
+    {
+      "month": "January",
+      "visits": 1500,
+      "category": "Organic"
+    },
+    {
+      "month": "February",
+      "visits": 1850,
+      "category": "Organic"
+    },
+    {
+      "month": "March",
+      "visits": 2200,
+      "category": "Referral"
+    },
+    {
+      "month": "April",
+      "visits": 2050,
+      "category": "Organic"
+    },
+    {
+      "month": "May",
+      "visits": 2500,
+      "category": "Social"
+    },
+    {
+      "month": "June",
+      "visits": 2300,
+      "category": "Referral"
+    },
+     {
+      "month": "July",
+      "visits": 2750,
+      "category": "Organic"
+    }
+  ]

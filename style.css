@@ -1,0 +1,103 @@
+/* General Body Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa; /* Slightly lighter background */
+    color: #343a40; /* Darker text */
+    line-height: 1.6;
+}
+
+/* Main Title */
+h1 {
+    text-align: center;
+    color: #212529; /* Even darker for title */
+    margin-bottom: 30px;
+}
+
+/* Controls Area Styling */
+.controls {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    border: 1px solid #dee2e6; /* Light border */
+}
+
+.controls label {
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.controls select,
+.controls button {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.controls select:focus,
+.controls button:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.controls button {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border-color: #007bff;
+    margin-left: 15px; /* More space before button */
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* Chart Container Styling */
+.chart-container {
+    width: 90%; /* Make it wider */
+    max-width: 900px; /* Increase max width */
+    height: 450px; /* Increase height */
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 25px; /* More padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+    position: relative;
+}
+
+/* Optional: Add a loading/error state style */
+.chart-container p {
+    text-align: center;
+    padding: 50px;
+    color: #6c757d; /* Muted color */
+}
+
+/* Responsiveness (Example) */
+@media (max-width: 768px) {
+    .chart-container {
+        width: 95%;
+        height: 350px; /* Adjust height for smaller screens */
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .controls {
+        display: flex;
+        flex-direction: column; /* Stack controls vertically */
+        align-items: stretch; /* Make items full width */
+        gap: 10px; /* Add space between stacked items */
+    }
+    .controls button {
+         margin-left: 0; /* Remove left margin when stacked */
+    }
+}
